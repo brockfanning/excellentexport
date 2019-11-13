@@ -239,6 +239,7 @@ const ExcellentExport = function() {
             const filename = (options.filename || 'download') + '.' + options.format;
             // Support for IE.
             if (window.navigator.msSaveBlob) {
+                console.log('saving blob in IE');
                 window.navigator.msSaveBlob(blob, filename);
                 return false;
             }
