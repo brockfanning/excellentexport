@@ -240,6 +240,7 @@ const ExcellentExport = function() {
             // Support for IE.
             if (window.navigator.msSaveBlob) {
                 console.log('saving blob in IE');
+                console.log(this);
                 window.navigator.msSaveBlob(blob, filename);
                 return false;
             }
